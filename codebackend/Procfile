@@ -1,2 +1,2 @@
-web: python codebackend/manage.py runserver 0.0.0.0:8000
+web: gunicorn codebackend.wsgi --bind 0.0.0.0:$PORT
 
